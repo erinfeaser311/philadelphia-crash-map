@@ -1,0 +1,62 @@
+---
+title: "Project Overview: Philadelphia Crash Data"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction and motivation 
+
+National fatalities have been on the rise by more than 7% over each of the last two years. In Pennsylvania, there were 1,188 roadway fatalities in 2016. Citizens and law enforcement want to be more proactive in avoiding or preventing serious crashes. The ultimate goal is to build a model that can help identify the risk of collisions for the next few hours (in the future) on any day. For a more complete description, view the PA crash risk prediction [use case](https://www.code4pa.tech/wp-content/uploads/2017/09/combined-use-cases-09-25-17-V2.pdf).
+
+## Minimum viable product philosophy
+
+This image [widely attributed to the Spotify development team](https://blog.fastmonkeys.com/?utm_content=bufferc2d6e&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer) sums this philosophy up.
+
+\bigskip
+
+\centerline{\includegraphics[width=0.5\textwidth]{mvp.png}}
+
+## The goal for this project
+
+We want to build an attractive looking web application that displays historical crash data for Philadelphia. This will entail:
+
+1. An interactive map of Philadelphia.
+2. A 1 km by 1 km grid of the city indicating a particular cell's crash risk level based on historical data. 
+3. The option to choose a month, day of the week, and three-hour window; and then view these crash risk levels on the map. The default should be the current values when a user starts the app.
+4. Clicking on a particular cell will display more detailed information about crashes in this area.
+5. When zoomed in enough on the map, relevant crashes will appear as points on the map. Hovering over a point will display additional data about the crash.
+
+## Tools
+
+We will use the following tools:
+
+1. R/Rstudio for general coding
+2. Shiny (an R package) for app development
+3. Leaflet (an R package) for making interactive maps
+
+## Inspiration
+
+We will be inspired (copy from) the folowing:
+
+1. [Indiana's Daily Crash Prediction Map](https://www.in.gov/isp/ispCrashApp/main.html).
+2. [Superzip Interactive Map and Data Explorer](http://shiny.rstudio.com/gallery/superzip-example.html)
+
+## Resources
+
+Learn more from the following resources:
+
+### Shiny
+
+1. [RStudio](https://shiny.rstudio.com/)
+2. [Jenny Bryan's Resources](http://stat545.com/shiny00_index.html)
+
+### Leaflet
+
+1. [Leaflet Overview](https://rstudio.github.io/leaflet/)
+
+
+
+
